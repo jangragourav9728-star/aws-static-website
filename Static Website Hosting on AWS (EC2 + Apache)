@@ -1,0 +1,54 @@
+Step 1: EC2 Instance Launch
+
+AWS Console → EC2
+
+Launch Instance
+
+AMI: Amazon Linux 2023
+
+Instance type: t2.micro (Free tier)
+
+Key pair create/download
+
+Security Group:
+
+SSH → Port 22
+
+HTTP → Port 80
+
+Launch
+ 
+ Step 2: Connect to EC2
+ 
+ssh -i key.pem ec2-user@<Public-IP>
+
+Step 3: Apache Install & Start
+ 
+sudo yum update -y
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
+
+ Step 4: Website Files Add karo
+cd /var/www/html
+sudo nano index.html
+
+Example:
+ <html>
+  <head>
+    <title>My Static Website</title>
+  </head>
+  <body>
+    <h1>Hello from AWS EC2 🚀</h1>
+    <p>Static Website Hosted on AWS</p>
+  </body>
+</html>
+Save → Ctrl+O → Enter → Ctrl+X
+
+ Step 5: Browser me Check
+http://<EC2-Public-IP>
+
+ 
+ 
+
+ 
