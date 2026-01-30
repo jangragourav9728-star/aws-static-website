@@ -23,3 +23,6 @@ Static website successfully hosted and accessible over the internet.
 - Portfolio website
 - Landing pages
 - Practice AWS fundamentals
+
+-   ****<img width="960" height="540" alt="github-project-board" src="https://github.com/user-attachments/assets/55dbcbb8-52f4-47f3-b866-e266197b6b0c" />
+
