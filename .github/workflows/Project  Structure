@@ -1,0 +1,9 @@
+ai-resume-analyzer/
+│
+├── lambda/
+│   └── lambda_function.py
+│
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── .github/workflows/deploy.yml
